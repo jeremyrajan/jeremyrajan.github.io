@@ -12,7 +12,7 @@ const Project = (props) => (
           <div className="content">
             <p><b>{props.repo.name}</b></p>
             <p>{props.repo.description}</p>
-            <a target="_blank" href={props.repo.link}>
+            <a target="_blank" href={props.repo.html_url}>
               <i className="fa fa-external-link" aria-hidden="true"></i>
             </a>
           </div>
