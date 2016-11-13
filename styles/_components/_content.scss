@@ -29,7 +29,6 @@
       margin: 5px 0;
       font-size: 18px;
       color: #006699;
-      font-weight: bold;
     }
   }
 
@@ -47,6 +46,10 @@
       margin: 10px 5px;
       text-transform: capitalize;
       display: inline-flex;
+    }
+
+    ul li a {
+      border: 1px solid #00d1b2;
     }
 
     ul li a:hover {
