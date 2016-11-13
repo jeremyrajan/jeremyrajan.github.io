@@ -5,7 +5,21 @@ const jeremyrajan = gh.getUser('jeremyrajan');
 const Loader = require('halogen/PulseLoader');
 
 const Project = (props) => (
-  <li><a className="button" target="_blank" href={props.link}>{props.name}</a></li>
+  <li>
+    <div className="box" id="me">
+      <article className="media">
+        <div className="media-content">
+          <div className="content">
+            <p><b>{props.repo.name}</b></p>
+            <p>{props.repo.description}</p>
+            <a target="_blank" href={props.repo.link}>
+              <i className="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </li>
 );
 
 const fromLocalStorage = () => {
@@ -60,7 +74,7 @@ class Projects extends React.Component {
       );
     }
 
-    const projects = this.state.projects.map((p, key) =>  <Project key={key} name={p.name} link={p.html_url} />);
+    const projects = this.state.projects.map((p, key) =>  <Project key={key} repo={p} />);
     return (
       <div id="projects">
         <h1>OSS</h1>

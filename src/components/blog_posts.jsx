@@ -2,7 +2,10 @@ import React from 'react';
 const config = require('../config.json');
 
 const Post = (props) => (
-  <li><a target="_blank" href={props.link}>{props.name}</a></li>
+  <li>
+    <i className="fa fa-chevron-right" aria-hidden="true"></i>
+    <a target="_blank" href={props.link}>{props.name}</a>
+  </li>
 );
 
 class BlogPosts extends React.Component {

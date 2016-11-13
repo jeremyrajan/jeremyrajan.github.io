@@ -1,6 +1,10 @@
 #content {
   text-align: center;
   margin-top: 50px;
+  
+  a {
+    border-bottom: none;
+  }
 
   #me {
    
@@ -13,11 +17,15 @@
 
   #blog-posts {
     margin: 40px 0px;
-    float: left;
     text-align: left;
   
     ul li {
-      margin: 10px 0;
+      margin: 10px 2px;
+    }
+
+    ul li i {
+      margin: 10px;
+      line-height: 8px;
     }
 
     ul li a:hover {
@@ -34,27 +42,30 @@
 
   #projects {
     margin: 40px 0px;
-    float: right;
     text-align: left;
-    width: 400px;
 
     ul {
       margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      height: 145px;
+      position: relative;
+    }
+
+    li a {
+      position: absolute;
+      right: 8px;
+      bottom: 0;
+      font-size: 18px;
     }
 
     ul li {
       margin: 10px 5px;
       text-transform: capitalize;
-      display: inline-flex;
-    }
-
-    ul li a {
-      border: 1px solid #00d1b2;
-    }
-
-    ul li a:hover {
-     background: #006699;
-     color: white;
+      width: 310px;
     }
   }
 }
