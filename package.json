@@ -1,0 +1,35 @@
+{
+  "name": "jeremyrajan",
+  "version": "1.2.0",
+  "description": "my website",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "gulp lint",
+    "start": "gulp"
+  },
+  "author": "Jeremy Rajan",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "browser-sync": "^2.17.5",
+    "del": "^2.2.2",
+    "eslint": "^3.9.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-loader": "^1.6.0",
+    "eslint-plugin-import": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "run-sequence": "^1.2.2",
+    "uglify-js": "^2.7.4",
+    "webpack": "^1.13.3"
+  }
+}
