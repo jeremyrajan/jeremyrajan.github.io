@@ -1,8 +1,29 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css";
+
+@import 'reset';
+@import '_components/logo';
+@import '_components/right-menu';
+@import '_components/content';
+
+html {
+  background: transparent;
+}
+
 body {
-  font-family: monospace;
-  color: black;
+  background-origin: padding-box;
+  width: 1000px;
+  margin: 0 auto;
+  background: #333;
 }
 
 #container {
-  padding: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
+
+footer {
+  font-size: 10px;
+}
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";

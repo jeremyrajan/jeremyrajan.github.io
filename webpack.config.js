@@ -6,9 +6,12 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', 'index.js', 'index.jsx', '.json', 'index.json']
   },
   module: {
+    preLoaders: [
+        { test: /\.json$/, loader: 'json' }
+    ],
     loaders: [
       {
         test: /\.jsx$/,

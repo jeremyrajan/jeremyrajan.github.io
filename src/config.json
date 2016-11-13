@@ -1,0 +1,34 @@
+{
+  "links": [
+    {
+      "name": "Home",
+      "link": "/",
+      "target": "_self"
+    },
+    {
+      "name": "Blog",
+      "link": "http://blog.jeremyrajan.com"
+    },
+    {
+      "name": "Resume",
+      "link": "http://blog.jeremyrajan.com/docs/resume.pdf",
+      "target": "_blank",
+      "class": "is-success"
+    }
+  ],
+  "me": "http://res.cloudinary.com/jeremyrajan/image/upload/c_thumb,h_200,w_200/v1439633557/KANS6170-JR_zitmiu.jpg",
+  "posts": [
+    {
+      "name": "Electron - When JS comes to Desktop Apps",
+      "link": "http://blog.jeremyrajan.com/2016/09/20/electronjs.html"
+    },
+    {
+      "name": "Setup CucumberJS with WebdriverIO",
+      "link": "http://blog.jeremyrajan.com/2016/04/27/setup-cucumberjs-with-webdriverio.html"
+    },
+    {
+      "name": "I <3 Javascript",
+      "link": "http://blog.jeremyrajan.com/2016/04/27/i-3-javascript.html"
+    }
+  ]
+}

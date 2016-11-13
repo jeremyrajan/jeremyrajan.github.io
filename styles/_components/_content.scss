@@ -1,0 +1,57 @@
+#content {
+  text-align: center;
+  margin-top: 50px;
+
+  #me {
+   
+   img {
+      border-radius: 50%;
+      width: 100px;
+    }
+    
+  }
+
+  #blog-posts {
+    margin: 40px 0px;
+    float: left;
+    text-align: left;
+  
+    ul li {
+      margin: 10px 0;
+    }
+
+    ul li a:hover {
+     background: #006699;
+     color: white;
+    }
+
+    a {
+      margin: 5px 0;
+      font-size: 18px;
+      color: #006699;
+      font-weight: bold;
+    }
+  }
+
+  #projects {
+    margin: 40px 0px;
+    float: right;
+    text-align: left;
+    width: 400px;
+
+    ul {
+      margin-top: 10px;
+    }
+
+    ul li {
+      margin: 10px 5px;
+      text-transform: capitalize;
+      display: inline-flex;
+    }
+
+    ul li a:hover {
+     background: #006699;
+     color: white;
+    }
+  }
+}
