@@ -4,6 +4,9 @@ const gh = new GitHub();
 const jeremyrajan = gh.getUser('jeremyrajan');
 const Loader = require('halogen/PulseLoader');
 
+/**
+ * Project details.
+ */
 const Project = (props) => (
   <li>
     <div className="box" id="me">
