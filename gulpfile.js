@@ -11,8 +11,8 @@ const concat = require('gulp-concat');
 const del = require('del');
 const runSequence = require('run-sequence');
 
-const ignoredFiles = ['./www/!index.html'];
-const deleteFiles = ['./www/css', './www/js'];
+const ignoredFiles = ['./docs/!index.html'];
+const deleteFiles = ['./docs/css', './docs/js'];
 
 const webpackBuild = (config, cb) => {
   webpack(config, (err, stats) => {
@@ -47,7 +47,7 @@ gulp.task('styles', (done) => {
     .pipe(gulp.dest('./tmp'))
     .pipe(concat('bundle.css'))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./www/css'))
+    .pipe(gulp.dest('./docs/css'))
     .on('finish', () => done());
 });
 
@@ -71,7 +71,7 @@ gulp.task('build:production', (done) => {
 gulp.task('server', () => {
   browserSync.init({
     server: {
-      baseDir: './www'
+      baseDir: './docs'
     },
   });
 });
