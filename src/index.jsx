@@ -10,7 +10,7 @@ class Portfolio extends React.Component {
             <div>
                 <Topbar />
                 <Content />
-                <footer>Built with React & Bluma CSS.</footer>
+                <footer>Built with React & Bulma.</footer>
             </div>
         )
     }
