@@ -1,6 +1,5 @@
 #content {
   text-align: center;
-  margin-top: 50px;
   
   a {
     border-bottom: none;
@@ -53,11 +52,13 @@
     .box {
       height: 145px;
       position: relative;
+      border-radius: 0 !important;
+      border: 1px solid rgba(10, 10,10,.1);
     }
 
     li a {
       position: absolute;
-      right: 8px;
+      right: -1px;
       bottom: 0;
       font-size: 18px;
     }

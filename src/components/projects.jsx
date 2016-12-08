@@ -46,12 +46,15 @@ class Projects extends React.Component {
   constructor() {
     super();
     this.state = {
-      projects: fromLocalStorage() || []
+      projects: [] // dont need localStorage for now.
     }
 
     // if we cant find in localStorage then continue
     if (!this.state.projects.length) {
-      jeremyrajan.listRepos()
+      jeremyrajan.listRepos({
+        sort: "pushed",
+        direction: "desc"
+      })
       .then(({ data: reposJson }) => {
         const repos = reposJson.filter(f => !f.fork 
             && !f.name.includes('github.io') 
@@ -60,10 +63,14 @@ class Projects extends React.Component {
             && !f.name.includes('Multiple')
             && !f.name.includes('angular-seed')
             && !f.name.includes('Codeignitor')
-            && !f.name.includes('Wordpress-Blank')
-            && !f.name.includes('React-Fun'));
-        toLocalStorage('jeremy_rajan_github', repos); // store to localStorage
-        this.setState({projects: repos });
+            && !f.name.includes('wordpress-blank-theme')
+            && !f.name.includes('react-fun')
+            && !f.name.includes('speechApp')
+            && !f.name.includes('es6-makemehapi')
+            && !f.name.includes('es6-playground')
+            && !f.name.includes('Angular-Phonegap'));
+        // toLocalStorage('jeremy_rajan_github', repos); // store to localStorage
+        this.setState({ projects: repos });
       });
     }
   }

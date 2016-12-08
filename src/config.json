@@ -7,7 +7,8 @@
     },
     {
       "name": "Blog",
-      "link": "http://blog.jeremyrajan.com"
+      "link": "http://blog.jeremyrajan.com",
+      "target": "_blank"
     },
     {
       "name": "Resume",
@@ -16,7 +17,14 @@
       "class": "is-success"
     }
   ],
-  "me": "http://res.cloudinary.com/jeremyrajan/image/upload/c_thumb,h_200,w_200/v1439633557/KANS6170-JR_zitmiu.jpg",
+  "me": "https://avatars0.githubusercontent.com/u/2890683?v=3&s=460",
+  "projects": {
+    "exclude": ["github.io", 
+    "photoSticker", "MySite", 
+    "Multiple", "angular-seed", 
+    "Codeignitor", "Wordpress-Blank-Theme", 
+    "React-Fun"]
+  },
   "posts": [
     {
       "name": "Electron - When JS comes to Desktop Apps",

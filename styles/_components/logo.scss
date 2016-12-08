@@ -4,6 +4,10 @@
   font-size: 18px;
   float: left;
 
+  span:first-child {
+    font-weight: bold;
+  }
+
   .fa-heart {
     color: hotpink;
     margin-top: 5px;
