@@ -81,7 +81,8 @@ class Projects extends React.Component {
             && !f.name.includes('speechApp')
             && !f.name.includes('es6-makemehapi')
             && !f.name.includes('es6-playground')
-            && !f.name.includes('Angular-Phonegap'));
+            && !f.name.includes('Angular-Phonegap')
+            && !f.name.includes('Alphagen'));
         // toLocalStorage('jeremy_rajan_github', repos); // store to localStorage
         this.setState({ projects: repos });
       });
