@@ -25,6 +25,7 @@
     "Codeignitor", "Wordpress-Blank-Theme", 
     "React-Fun"]
   },
+  "npm": ["santari", "blogy", "simple-http-node", "json-markdown"],
   "posts": [
     {
       "name": "Electron - When JS comes to Desktop Apps",

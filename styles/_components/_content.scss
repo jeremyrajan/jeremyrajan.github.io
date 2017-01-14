@@ -5,6 +5,22 @@
     border-bottom: none;
   }
 
+  .recharts-wrapper {
+    padding: 1px;
+    position: absolute !important;
+    bottom: 0;
+    opacity: 0.2;
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  .repoLogo {
+    img {
+      width: 20px !important;
+      border-radius: none;
+    }
+  }
+
   #me {
    
    img {
