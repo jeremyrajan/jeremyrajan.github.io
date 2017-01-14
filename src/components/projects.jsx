@@ -1,20 +1,32 @@
 import React from 'react';
 import GitHub from 'github-api';
+import NpmStats from './npm_stats';
+
 const gh = new GitHub();
 const jeremyrajan = gh.getUser('jeremyrajan');
 const Loader = require('halogen/PulseLoader');
+const config = require('../config.json');
 
 /**
  * Project details.
  */
-const Project = (props) => (
-  <li>
+const Project = (props) => {
+  let isNpm = false;
+  if (config.npm.find(n => n.includes(props.repo.name))) {
+    isNpm = true;
+  }
+  return (
+    <li>
     <div className="box" id="me">
       <article className="media">
         <div className="media-content">
           <div className="content">
-            <p><b>{props.repo.name}</b></p>
+            <p>
+              <b>{props.repo.name}</b>
+              {isNpm ? <span className="repoLogo"><img src="images/npm.png" alt="npm"/></span> : ''}
+            </p>
             <p>{props.repo.description}</p>
+            <NpmStats isNpm={isNpm} name={props.repo.name} />
             <a className="button" target="_blank" href={props.repo.html_url}>
               <i className="fa fa-external-link" aria-hidden="true"></i>
             </a>
@@ -23,7 +35,8 @@ const Project = (props) => (
       </article>
     </div>
   </li>
-);
+  );
+};
 
 const fromLocalStorage = () => {
   if (!window.localStorage) {

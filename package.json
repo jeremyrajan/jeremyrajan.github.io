@@ -31,8 +31,10 @@
     "json-loader": "^0.5.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "recharts": "^0.20.2",
     "run-sequence": "^1.2.2",
     "uglify-js": "^2.7.4",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "whatwg-fetch": "^2.0.1"
   }
 }
