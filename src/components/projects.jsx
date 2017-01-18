@@ -16,18 +16,18 @@ const Project = (props) => {
     isNpm = true;
   }
   return (
-    <li>
+    <li className="column">
     <div className="box" id="me">
       <article className="media">
         <div className="media-content">
           <div className="content">
             <p>
               <b>{props.repo.name}</b>
-              {isNpm ? <span className="repoLogo"><img src="images/npm.png" alt="npm"/></span> : ''}
+              {isNpm ? <a href={`https://www.npmjs.com/package/${props.repo.name}`} target="_blank"><span className="repoLogo"><img src="images/npm.png" alt="npm"/></span></a> : ''}
             </p>
             <p>{props.repo.description}</p>
             <NpmStats isNpm={isNpm} name={props.repo.name} />
-            <a className="button" target="_blank" href={props.repo.html_url}>
+            <a className="button ext-link" target="_blank" href={props.repo.html_url}>
               <i className="fa fa-external-link" aria-hidden="true"></i>
             </a>
           </div>
@@ -101,8 +101,7 @@ class Projects extends React.Component {
     const projects = this.state.projects.map((p, key) =>  <Project key={key} repo={p} />);
     return (
       <div id="projects">
-        <h1>OSS</h1>
-        <ul>{projects}</ul>
+        <ul className="columns">{projects}</ul>
       </div>
     );
   }

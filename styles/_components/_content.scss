@@ -1,5 +1,6 @@
 #content {
   text-align: center;
+  padding: 20px;
   
   a {
     border-bottom: none;
@@ -69,20 +70,20 @@
       height: 145px;
       position: relative;
       border-radius: 0 !important;
-      border: 1px solid rgba(10, 10,10,.1);
+      min-width: 250px;
+      border: 1px solid grey;
+      box-shadow: none;
     }
 
-    li a {
+    li a.ext-link {
       position: absolute;
       right: -1px;
-      bottom: 0;
+      bottom: -1px;
       font-size: 18px;
     }
 
     ul li {
-      margin: 10px 5px;
       text-transform: capitalize;
-      width: 310px;
     }
   }
 }

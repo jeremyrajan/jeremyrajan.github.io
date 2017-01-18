@@ -6,6 +6,40 @@ hr {
   clear: both;
 }
 
-  h1 {
-     font-size: 25px;
-  }
+h1 {
+  font-size: 25px;
+}
+
+hr {
+  margin: 0;
+}
+
+nav {
+  background: transparent !important;
+}
+
+.nav {
+  min-height: initial;
+  height: 35px;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.nav-toggle {
+  background: white;
+  position: absolute;
+  right: 0;
+  height: 35px;
+}
+
+#content .button {
+  border-radius: 0;
+  border: 1px solid #333;
+}
+
+#content .button:hover {
+  background: #00d1b2;
+  color: white;
+}

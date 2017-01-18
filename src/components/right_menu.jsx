@@ -5,7 +5,9 @@ class NavItem extends React.Component {
   render() {
     const classes = `button ${this.props.class || ''}`;
     return (
-      <li><a target={this.props.target} className={classes} href={this.props.link}>{this.props.name}</a></li>
+      <div className="nav-item">
+        <a target={this.props.target} className={classes} href={this.props.link}>{this.props.name}</a>
+      </div>
     );
   }
 }
@@ -14,9 +16,16 @@ class RightMenu extends React.Component {
   render() {
     const items = config.links.map((item, key) => <NavItem key={key} class={item.class} link={item.link} name={item.name} target={item.target} />);
     return (
-      <ul id="right-menu">
+      <nav className="nav">
+      <span className="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div className="nav-right nav-menu">
         {items}
-      </ul>
+      </div>
+      </nav>
     );
   }
 }

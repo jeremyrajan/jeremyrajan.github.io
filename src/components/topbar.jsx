@@ -5,7 +5,7 @@ import RightMenu from './right_menu'
 class TopBar extends React.Component {
   render() {
     return (
-      <div>
+      <div id="topbar">
         <Logo />
         <RightMenu />
         <div className="clear"></div>
