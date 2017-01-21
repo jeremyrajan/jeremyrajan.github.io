@@ -75,6 +75,10 @@
       box-shadow: none;
     }
 
+    .box:hover {
+      box-shadow: 5px 5px 5px #ccc;
+    }
+
     li a.ext-link {
       position: absolute;
       right: -1px;

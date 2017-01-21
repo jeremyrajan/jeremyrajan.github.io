@@ -42,4 +42,11 @@ nav {
 #content .button:hover {
   background: #00d1b2;
   color: white;
+  border: none;
+}
+
+.column {
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 300px;
 }
